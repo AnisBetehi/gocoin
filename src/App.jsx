@@ -22,6 +22,7 @@ function App() {
                   <GlobalStats />
                   <CoinsTable />
                 </>} />
+                <Route path="*" element={<Navigate to="/" />} />  
                 <Route path='/coins/:id' element={<CoinDetail />} />
             </Routes>
         </DataContextProvider>
