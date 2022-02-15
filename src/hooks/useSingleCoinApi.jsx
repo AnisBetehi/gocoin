@@ -12,10 +12,10 @@ const useSingleCoinApi = (id, timePeriod) => {
     const options = {
         method: 'GET',
         url: `https://coinranking1.p.rapidapi.com/coin/${id}`,
-        params: {referenceCurrencyUuid: 'yhjMzLPhuIDl', timePeriod},
+        params: {referenceCurrencyUuid: process.env.REACT_APP_API_ID, timePeriod},
         headers: {
           'x-rapidapi-host': 'coinranking1.p.rapidapi.com',
-          'x-rapidapi-key': 'bc552b06eemsh3c08d6579da7c34p1bb76cjsn719c951e8508'
+          'x-rapidapi-key': process.env.REACT_APP_API_KEY
         }
       };
       
