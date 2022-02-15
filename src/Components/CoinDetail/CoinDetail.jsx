@@ -302,6 +302,7 @@ const Periods = styled.div`
     text-align: center;
     border-radius: 2px;
     cursor: pointer;
+    user-select: none;
 
     &:hover {
       filter: brightness(120%);
