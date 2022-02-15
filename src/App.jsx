@@ -3,7 +3,7 @@ import Header from "./Components/Header/Header";
 import GlobalStyles from "./Styles/globalStyles";
 import theme from "./Styles/theme";
 import DataContextProvider from "./context/dataContext";
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, Navigate} from 'react-router-dom';
 import CoinsTable from "./Components/CoinsTable/CoinsTable";
 import CoinDetail from "./Components/CoinDetail/CoinDetail";
 import GlobalStats from "./Components/GlobalStats/GlobalStats";
