@@ -31,7 +31,6 @@ const useAllCoinsApi = (tier, timePeriod) => {
       setCoins(data.coins);
       setGlobalStats(data.stats);
       setLoading(false);
-      console.log(data.coins);
     }
 
     useEffect(() => {

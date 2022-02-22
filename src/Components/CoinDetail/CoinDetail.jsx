@@ -15,9 +15,7 @@ const CoinDetail = () => {
     const {timePeriod, setTimePeriod} = useData();
     const [coin] = useSingleCoinApi(id, timePeriod);
     const [priceHistory] = usePriceHistoryApi(id, timePeriod);
-    console.log(priceHistory);
 
-    console.log(coin);
   return (
     <CointDetailContainer>
       {coin && priceHistory?.length > 0 ? <>
@@ -55,7 +53,7 @@ const CoinDetail = () => {
             <h4>{coin.name} price chart</h4>
             <Periods>
               {['3h', '24h', '7d', '30d', '3m', '1y', '3y', '5y'].map(period => {
-                return <h4 onClick={() => setTimePeriod(period)}>{period}</h4>
+                return <h4 key={period} onClick={() => setTimePeriod(period)}>{period}</h4>
               })}
             </Periods>
           </div>
@@ -72,7 +70,7 @@ const CoinDetail = () => {
                   <FaExternalLinkAlt />
                   <div>
                     <a target='_blank' href={coin.websiteUrl}>Website</a>
-                    <h4>{coin.websiteUrl.replace(/^https?:\/\//, '')}</h4>
+                    <h4>{coin.websiteUrl ? coin.websiteUrl.replace(/^https?:\/\//, '') : 'No website'}</h4>
                   </div>
               </div>
 

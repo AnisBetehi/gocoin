@@ -9,7 +9,6 @@ ChartJS.register(...registerables);
 
 const PriceChart = ({id, priceHistory}) => {
 
-    console.log('from chart', priceHistory);
     const {timePeriod} = useData();
 
     const chartData = {
