@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
     body {
         font-family: ${({theme}) => theme.mainFont};
         background-color: ${({theme}) => theme.mainBg};
+        overflow-x: hidden;
     }
 
 
