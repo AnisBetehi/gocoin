@@ -1,5 +1,5 @@
 # GOCOIN
-### [**GOCOIN**](https://gocoin.netlify.app) is a cryptocurency tracker web app, it gives you details about the top 50 currencies in the market.
+### [**GOCOIN**](https://gocoin.netlify.app) is a cryptocurency tracker web app built with ReactJS, it gives you details about the top 50 currencies in the market.
 
 
 ## How to run the app
@@ -53,7 +53,7 @@
 
 - While on the details page, changing the tier will redirect you to the home page.
 
-  
+- The app is completely responsive with all devices.
 
 
 ## Dependencies
