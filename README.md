@@ -63,6 +63,8 @@
 
 - [Chartjs](https://www.chartjs.org/)
 
+- [Axios](https://axios-http.com/docs/intro)
+
 ## API's used
 
 - [Coinranking API](https://developers.coinranking.com/api/documentation)
