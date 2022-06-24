@@ -23,7 +23,7 @@ const PriceChart = ({id, priceHistory}) => {
             data: priceHistory.map(coin => coin.price),
             label: `Price in the past ${timePeriod}`,
             borderColor: '#eac100',
-            borderWidth: 3,
+            borderWidth: 2,
             
         }]
     }
@@ -74,10 +74,28 @@ export default PriceChart;
 
 const ChartContainer = styled.section`
     width: 100%;
-    padding: 1rem;
+    padding: 1em;
+    font-size: 1rem;
+    
 
     @media(max-width: 1000px) {
         margin-top: 20px;
+    }
+
+    @media(min-width: 1700px) {
+      font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+      font-size: 1.7rem;
+    }
+
+    @media(min-width: 3000px) {
+      font-size: 2.5rem;
+    }
+
+    @media(min-width: 5000px) {
+      font-size: 3rem;
     }
    
 `

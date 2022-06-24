@@ -103,16 +103,33 @@ const CointDetailContainer = styled.section`
   flex-direction: column;
   align-items: center;
   color: white;
-  padding-block: 50px;
-  gap: 2px;
+  padding-block: 3.1em;
+  gap: .2em;
+  font-size: 1rem;
   
   > img {
-    width: 40px;
+    width: 2.4em;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+    @media(min-width: 1700px) {
+      font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+      font-size: 1.7rem;
+    }
+
+    @media(min-width: 3000px) {
+      font-size: 2.5rem;
+    }
+
+    @media(min-width: 5000px) {
+      font-size: 3rem;
+    }
 `
 
 const CoinHead = styled.div`
@@ -120,7 +137,7 @@ const CoinHead = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 2em;
   background-color: ${({theme}) => theme.headerBg};
 
   @media(max-width: 1000px) {
@@ -134,14 +151,14 @@ const CoinHead = styled.div`
 const CoinTitle = styled.div`
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.1em;
   img {
-    width: 50px;
+    width: 3.1em;
   }
 
   > div {
     h1 {
-      font-size: 2rem;
+      font-size: 2em;
     }
 
     h4, svg {
@@ -149,16 +166,16 @@ const CoinTitle = styled.div`
     }
 
     svg {
-      font-size: 20px;
+      font-size: 1.1em;
       font-weight: bolder;
-      margin-right: 5px;
+      margin-right: .4em;
     }
   }
 `
 
 const CoinInfo = styled.div`
   display: flex;
-  gap: 50px;
+  gap: 3.1em;
 
   > div {
     > h5 {
@@ -174,13 +191,13 @@ const CoinInfo = styled.div`
 
 const CoinBody = styled.div`
     width: 90%;
-    padding: 2rem;
+    padding: 2em;
     background-color: ${({theme}) => theme.headerBg};
 
     > p {
-      font-size: 14px;
+      font-size: .9em;
       color: white;
-      line-height: 25px;
+      line-height: 1.5em;
       font-weight: 500;
     }
 
@@ -196,24 +213,24 @@ const BasicInfo = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
-    padding-block: 1rem;
+    gap: .6em;
+    padding-block: 1em;
     font-weight: bolder;
   
 
 
     > h3 {
-      font-size: 25px;
+      font-size: 1.5em;
     }
 
     > div:first-of-type {
       display: flex;
-      gap: 5px;
+      gap: .4em;
 
       h5 {
-        padding: 5px;
-        font-size: 15px;
-        border-radius: 2px;
+        padding: .4em;
+        font-size: .95em;
+        border-radius: .2em;
         background: gray;
       }
 
@@ -233,27 +250,27 @@ const Links = styled.div`
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 1.1em;
+    margin-top: 1.1em;
 
     > div {
       display: flex;
       align-items: center;
-      padding: 5px;
-      gap: 10px;
+      padding: ,4em;
+      gap: .6em;
 
       svg {
-        font-size: 20px;
+        font-size: 1.1em;
       }
 
       > div {
         h4 {
-          font-size: 14px;
+          font-size: 1.1em;
           color: white;
         }
 
         a {
-          font-size: 20px;
+          font-size: 1.1em;
           text-decoration: none;
           color: ${({theme}) => theme.mainColor};
         }
@@ -272,7 +289,7 @@ const ChartContainer = styled.div`
   > div:first-child {
     display: flex;
     justify-content: space-between;
-    padding-inline: 20px;
+    padding-inline: 1.1em;
 
     @media(max-width: 1000px) {
       flex-direction: column;
@@ -290,15 +307,15 @@ const ChartContainer = styled.div`
 
 const Periods = styled.div`
   display: flex;
-  gap: 5px;
+  gap: .4em;
 
   h4 {
-    padding: 5px;
-    font-size: 14px;
-    width: 55px;
+    padding: .4em;
+    font-size: .9em;
+    width: 3.4em;
     background-color: ${({theme}) => theme.mainBg};
     text-align: center;
-    border-radius: 2px;
+    border-radius: .2em;
     cursor: pointer;
     user-select: none;
 

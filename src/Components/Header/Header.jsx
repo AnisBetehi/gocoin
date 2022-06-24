@@ -41,13 +41,30 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   padding-inline: 7vw;
-  padding-block: .9rem;
+  padding-block: .9em;
+  font-size: 1rem;
+
+  @media(min-width: 1700px) {
+    font-size: 1.3rem;
+  }
+
+  @media(min-width: 2000px) {
+    font-size: 1.7rem;
+  }
+
+  @media(min-width: 3000px) {
+    font-size: 2.5rem;
+  }
+
+  @media(min-width: 5000px) {
+    font-size: 3rem;
+  }
 `
 
 
 const Logo = styled.h1`
   color: ${({theme}) => theme.mainColor};
-  font-size: clamp(16px, 22px, 25px);
+  font-size: clamp(1em, 1.3em, 1.5em);
   cursor: pointer;
   user-select: none;
 `
@@ -56,12 +73,13 @@ const Logo = styled.h1`
 const CurrencyContainer = styled.div`
 
   select, option {
-    padding: .5rem;
+    padding: .5em;
     border: none;
     outline: none;
     color: ${({theme}) => theme.mainColor};
     background-color: ${({theme}) => theme.mainBg};
     font-weight: bolder;
+    font-size: .85em;
   }
 
 `

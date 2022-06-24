@@ -36,23 +36,26 @@ const GlobalStatsContainer = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-inline: 3rem;
+    padding-inline: 3em;
     width: 100vw;
-    padding-block: 40px;
-    gap: 2rem;
+    padding-block: 2.4em;
+    gap: 2em;
+    font-size: 1rem;
+
+
 
 
     > div {
         display: flex;
-        gap: 40px;
-        font-size: 14px;
+        gap: 2.35em;
+        font-size: .9em;
 
         h4 {
             color: ${({theme}) => theme.secondaryColor};
 
             > span {
                 color: ${({theme}) => theme.mainColor};
-                padding-left: 10px;
+                padding-left: .6em;
                 
             }
         }
@@ -75,5 +78,22 @@ const GlobalStatsContainer = styled.section`
             
         }
     }
+
+    
+  @media(min-width: 1700px) {
+    font-size: 1.3rem;
+  }
+
+  @media(min-width: 2000px) {
+    font-size: 1.7rem;
+  }
+
+  @media(min-width: 3000px) {
+    font-size: 2.5rem;
+  }
+
+  @media(min-width: 5000px) {
+    font-size: 3rem;
+  }
 `
 

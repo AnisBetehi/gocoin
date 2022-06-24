@@ -89,16 +89,33 @@ const CoinsTableContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 1.1em;
+    font-size: 1rem;
 
     @media(max-width: 1000px) {
         width: 100vw;
+    }
+
+    @media(min-width: 1700px) {
+      font-size: 1.3rem;
+    }
+
+    @media(min-width: 2000px) {
+      font-size: 1.7rem;
+    }
+
+    @media(min-width: 3000px) {
+      font-size: 2.5rem;
+    }
+
+    @media(min-width: 5000px) {
+      font-size: 3rem;
     }
 `
 
 const LoaderImg = styled.img`
     position: absolute;
-    width: 40px;
+    width: 2.5em;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -111,10 +128,10 @@ const Table = styled.table`
     thead {
         background-color: ${({theme}) => theme.headerBg};
         color: white;
-        padding: 1rem;
+        padding: 1em;
 
         th {
-            padding-inline: .3rem;
+            padding-inline: .3em;
         }
 
     }
@@ -129,7 +146,7 @@ const Table = styled.table`
         transition: .2s ease;
 
         td {
-            padding-block: 1rem;
+            padding-block: 1em;
         }
     }
 
@@ -142,11 +159,11 @@ const Table = styled.table`
     td:nth-child(2) {
         display: flex;
         text-align: left;
-        gap: 15px;
-        padding-left: 20px;
+        gap: .95em;
+        padding-left: 1.1em;
 
         img {
-            width: 40px;
+            width: 2.4em;
             object-fit: cover;
 
 
@@ -161,25 +178,26 @@ const Table = styled.table`
     }
 
     th, td {
-        padding-block: .7rem;
-        font-size: 14px;
+        padding-block: .7em;
+        font-size: .9em;
         text-align: center;
         font-weight: bolder;
 
         h4 {
-            margin-top: 5px;
+            margin-top: .4em;
         }
 
         h3 {
             color: ${({theme}) => theme.mainColor};
         }
         > select {
-            padding: .2rem .4rem;
+            padding: .2em .4em;
             background-color: ${({theme}) => theme.mainBg};
             color: ${({theme}) => theme.mainColor};
             border: none;
             outline: none;
             font-weight: bolder;
+            font-size: 1em;
         }
     }
 
